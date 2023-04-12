@@ -1,0 +1,19 @@
+body {
+    background-color: #ececec;
+    margin: 0;
+}
+
+.navbar {
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.dark {
+    background-color: #222;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: #222;
+}
