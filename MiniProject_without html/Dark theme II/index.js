@@ -17,6 +17,10 @@ function Navbar(props) {
     //return <h1>Online supermarket</h1>
     
     return <h1 className={result}>Online supermarket</h1>
+    /* 
+    console.log(props.theme)
+    return <h1 className={`"navbar" ${props.theme}`}>Online supermarket</h1>
+    */
     
 }
 
