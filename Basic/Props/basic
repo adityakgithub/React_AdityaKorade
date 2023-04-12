@@ -1,0 +1,51 @@
+
+<!-- 
+<h1 id="something" className="something">
+    <div>something1</div>
+    <div>something2</div>
+</h1>
+ -->
+ <!-- 
+    here,
+    props,is object which show above
+    {
+        id: "something",
+        className:"something"
+    }
+    and Props.children will show above
+    props.children=[
+        {div:"something1"},
+        {div: "something2"}
+    ]
+  -->
+
+  <!-- 
+    Note: One way binding happen here no two way as like Angular
+    one way like from parent component to child
+    means from app to button
+   -->
+
+   <!-- 
+    Destrucring
+    const person = {
+    firstName: "Sam",
+    lastName: "Doe",
+    age: 24
+}
+const firstName = person.firstName;
+const lastName = person.lastName;
+or
+const {firstName, lastName, status = 'single'} = person;
+function WelcomeUser(props) {
+    const username = props.username;
+    const notifications = props.notifications;
+
+    return <div>Welcome {username}! You've got {notifications} unread notifications.</div>;
+}
+or
+function WelcomeUser(props) {
+    const {username, notifications} = props;
+
+    return <div>Welcome {username}! You've got {notifications} unread notifications.</div>;
+}
+    -->
