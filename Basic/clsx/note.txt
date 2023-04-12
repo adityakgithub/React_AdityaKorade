@@ -1,0 +1,30 @@
+npm install clsx
+Import Cost
+The clsx package is approximately 300 Bytes only (less than 1KB), so you don't have to worry about its size when importing it into your project.
+
+import clsx from "clsx";
+
+const result = clsx({
+    "link": true,
+    "link-primary": true
+});
+
+console.log(result); //"link link-primary"
+
+import clsx from "clsx";
+
+const result = clsx({
+    "link": true,
+    "link-primary": false
+});
+
+console.log(result); //"link"
+import clsx from "clsx";
+
+function MyComponent(props) {
+    const className = clsx({"title": props.loggedIn});
+    return <h1 className={className}></h1>
+}
+
+const example1 = <MyComponent loggedIn={true} />; // className="title"
+const example2 = <MyComponent loggedIn={false} />; // className=""
