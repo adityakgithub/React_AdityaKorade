@@ -248,3 +248,74 @@ function getPaymentMethods() {
 
 // sample usage (do not modify)
 console.log(getPaymentMethods());
+
+function getDropdownMenu() {
+    return (
+        <ul id="dropdown-menu" className="dropdown">
+            <li>Profile</li>
+            <li>Orders</li>
+            <li className="separator"></li>
+            <li>Logout</li>
+        </ul> 
+    )
+}
+
+// sample usage (do not modify)
+console.log(getDropdownMenu());
+
+//self closing tags
+/* 
+img
+br (line break)
+hr (horizontal rule)
+input 
+<br>its same as =><br />
+*/
+
+function getUserAvatar(path) {
+    return (
+        // <img src={path}/>
+        <img src={path}/>
+    )
+}
+
+// sample usage (do not modify)
+const url = "https://res.cloudinary.com/dbfn5lnvx/image/upload/v1576923026/react-tutorial/misc/user.png";
+console.log(getUserAvatar(url));
+
+
+//JSX Fragments
+/* 
+You can return only one react element(i,e return only one object from one component)
+if we want to return more than one react Element,
+solution is React.Fragment
+it enables us to return more than one element
+Syntax:
+return (
+    <>
+    </>
+)
+or 
+return (
+    <React.Fragment>// only need import React from "react";
+    </React.Fragment>
+)
+*/
+
+import React from "react";
+function getFooter() {
+    return (
+        <React.Fragment>
+            <h3>Your online supermarket</h3>
+  <ul>
+      <li>Contact</li>
+      <li>Press</li>
+      <li>About</li>
+  </ul>
+  <p>All rights reserved &copy;</p>
+        </React.Fragment>
+    )
+}
+
+// sample usage (do not modify)
+console.log(getFooter());
