@@ -1,0 +1,17 @@
+The aim of this project is to improve your UI Kit.
+We've already given you the solution of Project I that you will improve so that:
+
+All Components are customizable from the outside (they accept any attribute).
+All Components will keep their default classNames (for example ui-container for the Container Component). However, you should still be able to add a `className` on the Component which will be added next to the default className. Here are the default classes:
+Container: ui-container
+Input: ui-textfield
+Link: ui-link
+Button: ui-button
+Examples:
+Example #1: <Container className="main"><Container> will render <div className="ui-container main"></div>
+Example #2: <Container className="store"><Container> will render <div className="ui-container store"></div>
+Notice how you can use the Container with your own class and it will end up using that class as well as the default "ui-container". This behaviour should be the same for all components.
+
+Note
+The <Input /> should still default the type to "text".
+You do NOT need to import the index.css as it is automatically injected in the page.
